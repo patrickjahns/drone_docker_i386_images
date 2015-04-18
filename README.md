@@ -33,3 +33,17 @@ Adapt the naming conventions in the makefiles accordingly and just run `make` in
 ### Building your own images
 The buildpack images provides an easy way for adding any variable to your environment.
 Simply create a bash script with what you want to export in `/init.d/drone.d/` - these scripts will be executed within the bash shell 
+
+
+###TODO
+* buildpacks
+** node
+** golang
+** ruby
+** php
+** ????
+* databases
+** elasticsearch
+** neo4j
+** riak
+** ???
