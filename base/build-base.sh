@@ -48,6 +48,13 @@ sudo apt-get install -y \
 		libyaml-dev \
 		zlib1g-dev \
 
+
+# database clients for easy administration
+sudo apt-get install -y \
+		mysql-client \
+		postgresql-client \
+		sqlite3 \
+
 #cleanup
 sudo rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 sudo rm -rf /var/cache/apt/archives/*.deb
