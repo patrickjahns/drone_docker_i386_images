@@ -14,4 +14,4 @@ ADD pg_hba.conf /etc/postgresql/9.4/main/pg_hba.conf
 ADD postgresql.conf /etc/postgresql/9.4/main/postgresql.conf
 USER postgres
 EXPOSE 5432
-ENTRYPOINT ["/usr/lib/postgresql/9.3/bin/postgres", "-D", "/var/lib/postgresql/9.4/main", "-c", "config_file=/etc/postgresql/9.4/main/postgresql.conf", "-c", "listen_addresses=*"]
+ENTRYPOINT ["/usr/lib/postgresql/9.4/bin/postgres", "-D", "/var/lib/postgresql/9.4/main", "-c", "config_file=/etc/postgresql/9.4/main/postgresql.conf", "-c", "listen_addresses=*"]
