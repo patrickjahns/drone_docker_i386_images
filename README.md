@@ -37,7 +37,7 @@ Simply create a bash script with what you want to export in `/init.d/drone.d/` -
 
 ###TODO
 * buildpacks
-** node
+  * node
   * golang
   * ruby
   * php
