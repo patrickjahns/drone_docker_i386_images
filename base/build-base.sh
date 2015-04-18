@@ -37,6 +37,7 @@ sudo apt-get install -y \
 		libmagickcore-dev \
 		libmagickwand-dev \
 		libmysqlclient-dev \
+		libmemcached-dev \
 		libncurses-dev \
 		libpq-dev \
 		libreadline-dev \
