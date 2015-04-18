@@ -1,14 +1,15 @@
 BASETAG=drone32bit
-all: py
+all: python database
 
-py:
+python:
 	make -C python/
 
 
 buildpack:
 	docker build --rm -t ${BASETAG}/buildpack ./base/
 
-db:
+database:
 	make -C database/
 
 
+.PHONY: python base database

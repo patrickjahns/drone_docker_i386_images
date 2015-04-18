@@ -1,24 +1,25 @@
-all: make_redis make_couchdb make_mysql make_postgres make_memcached make_rabbitmq
+all: redis couchdb mysql postgres memcached rabbitmq
 
-make_couchdb:
+couchdb:
 	make -C ./couchdb
 
-make_mongodb:
+mongodb:
 	make -C ./mongodb
 
-make_mysql:
+mysql:
 	make -C ./mysql
 
-make_postgres:
+postgres:
 	make -C ./postgres
 
-make_redis:
+redis:
 	make -C ./redis
 
-make_rabbitmq:
+rabbitmq:
 	make -C ./rabbitmq
 
-make_memcached:
+memcached:
 	make -C ./memcached
 
 
+.PHONY: couchdb  elasticsearch memcached  mongodb  mysql  neo4j  postgres  rabbitmq  redis  riak
