@@ -38,12 +38,12 @@ Simply create a bash script with what you want to export in `/init.d/drone.d/` -
 ###TODO
 * buildpacks
 ** node
-** golang
-** ruby
-** php
-** ????
+  * golang
+  * ruby
+  * php
+  * ????
 * databases
-** elasticsearch
-** neo4j
-** riak
-** ???
+  * elasticsearch
+  * neo4j
+  * riak
+  * ???
