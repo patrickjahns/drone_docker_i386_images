@@ -1,0 +1,8 @@
+#!/bin/bash
+if [[ "${RABBIT_ULIMIT}" ]]; then
+    ulimit -n "${RABBIT_ULIMIT}"
+else
+    ulimit -n 1024
+fi
+chown -R rabbitmq:rabbitmq /data
+exec rabbitmq-server $@
