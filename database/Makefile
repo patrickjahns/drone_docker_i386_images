@@ -1,7 +1,10 @@
-all: redis couchdb mysql postgres memcached rabbitmq mongodb
+all: redis couchdb mysql postgres memcached rabbitmq mongodb mariadb
 
 couchdb:
 	make -C ./couchdb
+
+mariadb:
+	make -C ./mariadb
 
 mongodb:
 	make -C ./mongodb
@@ -22,4 +25,4 @@ memcached:
 	make -C ./memcached
 
 
-.PHONY: couchdb  elasticsearch memcached  mongodb  mysql  neo4j  postgres  rabbitmq  redis  riak
+.PHONY: couchdb  elasticsearch memcached  mongodb  mysql  neo4j  postgres  rabbitmq  redis  riak mariadb
