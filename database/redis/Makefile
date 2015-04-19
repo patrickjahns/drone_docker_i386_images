@@ -2,7 +2,7 @@ BASENAME = 'drone32bit/redis'
 DIRS = $(wildcard */)
 
 
-pybuild:
+redisbuild:
 	for dir in $(DIRS); do \
 		TAG=`cat $$dir/TAG`; \
 		docker build --rm -t ${BASENAME}:$$TAG $$dir;\

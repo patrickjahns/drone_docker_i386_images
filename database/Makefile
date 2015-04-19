@@ -1,4 +1,4 @@
-all: redis couchdb mysql postgres memcached rabbitmq
+all: redis couchdb mysql postgres memcached rabbitmq mongodb
 
 couchdb:
 	make -C ./couchdb

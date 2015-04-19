@@ -2,7 +2,7 @@ BASENAME = 'drone32bit/mysql'
 DIRS = $(wildcard */)
 
 
-pybuild:
+mysqlbuild:
 	for dir in $(DIRS); do \
 		TAG=`cat $$dir/TAG`; \
 		docker build --rm -t ${BASENAME}:$$TAG $$dir;\
