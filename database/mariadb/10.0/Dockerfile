@@ -16,4 +16,4 @@ RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 0xcbcb082a1bb94
 	rm -rf /tmp/*
 
 EXPOSE 3306
-ENTRYPOINT "/usr/sbin/mysqld_safe"
+ENTRYPOINT "/usr/sbin/mysqld"
