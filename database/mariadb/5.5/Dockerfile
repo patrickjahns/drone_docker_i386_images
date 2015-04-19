@@ -12,8 +12,7 @@ RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 0xcbcb082a1bb94
 	bash /tmp/config && \
 	apt-get clean && apt-get autoremove                                         && \
 	rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*                               && \
-	rm -rf /var/cache/apt/archives/*.deb                                        && \
-	rm -rf /tmp/*
+	rm -rf /var/cache/apt/archives/*.deb                                       
 
 EXPOSE 3306
-ENTRYPOINT "/usr/sbin/mysqld_safe"
+ENTRYPOINT "/usr/sbin/mysqld"

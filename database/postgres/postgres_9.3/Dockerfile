@@ -7,8 +7,7 @@ RUN apt-get -qq update                                                          
     LC_ALL=C DEBIAN_FRONTEND=noninteractive apt-get install -y -qq postgresql-9.3 postgresql-contrib-9.3	&& \
     apt-get clean && apt-get autoremove && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* && \
-    rm -rf /var/cache/apt/archives/*.deb && \
-    rm -rf /tmp/*
+    rm -rf /var/cache/apt/archives/*.deb
 
 ADD pg_hba.conf /etc/postgresql/9.3/main/pg_hba.conf
 ADD postgresql.conf /etc/postgresql/9.3/main/postgresql.conf

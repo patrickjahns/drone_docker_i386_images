@@ -26,8 +26,7 @@ RUN apt-get  update && apt-get upgrade && \
     sed -e 's/^bind_address = .*$/bind_address = 0.0.0.0/' -i /usr/local/etc/couchdb/default.ini && \
     apt-get clean && apt-get autoremove && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* && \
-    rm -rf /var/cache/apt/archives/*.deb && \
-    rm -rf /tmp/*
+    rm -rf /var/cache/apt/archives/*.deb 
 
 EXPOSE 5984
 ENTRYPOINT "/usr/local/bin/couchdb"
