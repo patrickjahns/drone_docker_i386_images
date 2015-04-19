@@ -4,6 +4,7 @@ This repository hosts 32bit images that can be used for testing with drone.
 The Dockerfiles have been take from the [official drone repository](https://github.com/drone/images) and modified 
 for personal use cases.
 
+For a __32 bit docker version__ check out [this repository](https://github.com/dokku32bit/docker_32bit)
 
 **base image**
 
